@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Room</title>
+</head>
+<body>
+  <h1>Edit Room</h1>
+  <form action="/api/rooms/<%= roomId %>" method="put">
+    <!-- Room edit form fields -->
+    <label for="title">Room Title:</label>
+    <input type="text" name="title" required><br>
+
+    <!-- Add more fields as needed -->
+
+    <button type="submit">Update Room</button>
+  </form>
+</body>
+</html>

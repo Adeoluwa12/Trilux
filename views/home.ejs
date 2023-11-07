@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight & Hotel Booking</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Booking Site</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/flights">Flights</a></li>
+            <li><a href="/hotels">Hotels</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="flights">
+            <h2>Flight Booking</h2>
+            <form id="flight-search-form">
+                <label for="origin">Origin</label>
+                <input type="text" id="origin" name="origin" required>
+
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="departure-date">Departure Date</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+
+                <button type="submit">Search Flights</button>
+            </form>
+            <div id="flight-results">
+                <!-- Flight search results from the third-party API will be displayed here -->
+            </div>
+        </section>
+
+        <section id="hotels">
+            <h2>Hotel Booking</h2>
+            <form id "hotel-search-form">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="check-in-date">Check-In Date</label>
+                <input type="date" id="check-in-date" name="check-in-date" required>
+
+                <label for="check-out-date">Check-Out Date</label>
+                <input type="date" id="check-out-date" name="check-out-date" required>
+
+                <button type="submit">Search Hotels</button>
+            </form>
+            <div id="hotel-results">
+                <!-- Hotel search results from the third-party API will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Hotflight Companies</p>
+    </footer>
+</body>
+</html>

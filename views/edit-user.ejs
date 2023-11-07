@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit User</title>
+</head>
+<body>
+  <h1>Edit User Profile</h1>
+  <form action="/api/users/<%= userId %>" method="put">
+    <!-- User edit form fields -->
+    <label for="username">Username:</label>
+    <input type="text" name="username" required><br>
+
+    <!-- Add more fields as needed -->
+
+    <button type="submit">Update User</button>
+  </form>
+</body>
+</html>
